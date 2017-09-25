@@ -6,28 +6,44 @@
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/index.js">
+  <script src='http://code.jquery.com/jquery-latest.min.js'></script>
 </head>
+
 <body>
+
   <header id="page-header">
     <div class="wrapper">
       <h1><center>NJ TRANSIT - CHECK FOR DELAYS ON YOUR TRANSIT LINE</center></h1>
     </div>
   </header>
-
-    <div class="wrapper">
+<br>
+<br>
+<center><div class="form-container">
+  <form id="settings-form">
+      NJ Transit Line<br>
+    <select name="lines">
+    <option value="nec">Northeast Corridor</option>
+    <option value="njcl">New Jersey Coast Line</option>
+    <option value="m&e">Morris & Essex</option>
+    <option value="m&e">Raritan Valley</option>
+    <option value="m&e">Atlantic City</option>
+    <option value="m&e">Main/Bergen/Port Jervis</option>
+    <option value="m&e">Montclair-Boonton</option>
+    <option value="m&e">Pascack Valley</option>
+    </select>
+  </center>
+<br>
+    <center><div class="wrapper">
       <div class="blurb">
-        <h2>Average Delay:</h2>
-        <p>Depending on what transit line the user chooses, this is where the information on how long the average delay is will display.</p>
+        <h2>Schedule:</h2>
+        <p>Depending on what transit line the user chooses, this is where the schedule for that line will populate</p>
       </div>
     </div>
+  </center>
   </section>
-  <div class="wrapper">
-    <section class="touts">
-      <section class="tout">
 
-      </section>
-    </section>
-  </div>
+
   <footer>
 
   </footer>
